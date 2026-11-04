@@ -1,0 +1,21 @@
+# Git Repo:
+
+https://github.com/Modassir2/Infinity
+https://github.com/Modassir2/desktop-assistant
+https://github.com/Modassir2/Gesture-Control
+https://github.com/Modassir2/image-organizing-system
+
+
+# Introduction
+I am Modassir Iqbal, and I like to research and find ways to do things that look fictional or impossible. My first Goal was to Build Jarvis inspired from Iron-Man, so i worked and am still working on infinity giving it more and more capabilities! 
+I have learnt Local-AI, Prompt Engineering and Python3. I have worked mostly with llama.cpp, LM-studio and Ollama creating OpenAI-compatible Endpoint. 
+I got into vision models like YOLO, RT-DETR/DETR and trained them for hand detection, face recognition and screen UI-objects classification. I tried to get into LLM-training but due to hardware limits, I only managed to fine-tune a small Gemma3 1b model on 4GB vram using python-unsloth memory optimized training to mimic my WhatsApp chat behavior. 
+I also made a simple Neural Network on python and trained it on the classic MNIST Handwritten Digit Dataset.
+I come from Maths background (Phy, Chem, Maths + Computer Science) so these were easier for me. 
+
+Now I am aiming to get into networking related stuff as they are quite interesting and useful in real world. So far i tried Flask in python, cloudflare temporary hosting, Playit.gg to host my own Minecraft JAVA server, tailscale to create VPN mesh and use local-wifi setups while outside of my setup. Linux has been the main difficult part to adapt to, I have used WSL(Windows Subsystem for Linux) and arch Linux in it for most of my setups. My setups include PiHole- DNS based network wide ad-blocker and Searxng- self served search engine.
+To also maintain my health I got into running marathons and cycling
+
+# Contact Info
+email -> mimodassir14@gmail.com
+phone no -> 9123326862

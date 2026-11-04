@@ -36,6 +36,7 @@
 
       <nav class="nav" id="nav" aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="certificates.html">Certificates</a>
         <a href="#contact">Contact</a>
@@ -72,9 +73,7 @@
             </h1>
 
             <p class="hero-lede">
-              I'm <strong>Modassir Iqbal</strong>, a student from Kolkata. I spend my time making local AI
-              agents see a screen, control a mouse, sort a folder, or answer a question without sending
-              a byte to someone else's server. Jarvis was the first goal. <strong>Infinity</strong> is what it turned into.
+              I'm <strong>Modassir Iqbal</strong>, a Maths and Computer Science student from Kolkata.
             </p>
 
             <div class="hero-actions">
@@ -119,122 +118,73 @@
           </aside>
         </div>
 
-        <div class="hero-foot">
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <strong>90.5%</strong>
-              <span>CBSE Class X · 2025</span>
-            </div>
-            <div class="hero-stat">
-              <strong>99/100</strong>
-              <span>Information Technology</span>
-            </div>
-            <div class="hero-stat">
-              <strong>1:10:37</strong>
-              <span>10K · Kolkata 2026</span>
-            </div>
-            <div class="hero-stat">
-              <strong>98.27 km</strong>
-              <span>Longest ride so far</span>
-            </div>
-          </div>
-          <a class="scroll-cue" href="#about">
-            <span>Scroll</span>
-            <i aria-hidden="true">↓</i>
-          </a>
-        </div>
-      </div>
     </section>
 
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <div class="marquee-group">
-          <span class="marquee-item">Local AI</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Computer vision</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Python</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Linux &amp; networking</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Self-hosted</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Jarvis energy</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Endurance</span><span class="marquee-star">✳</span>
-        </div>
-        <div class="marquee-group">
-          <span class="marquee-item">Local AI</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Computer vision</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Python</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Linux &amp; networking</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Self-hosted</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Jarvis energy</span><span class="marquee-star">✳</span>
-          <span class="marquee-item">Endurance</span><span class="marquee-star">✳</span>
-        </div>
-      </div>
-    </div>
-
-    <section class="section" id="about">
-      <div class="wrap intro-grid">
-        <div class="intro-head">
-          <p class="label" data-reveal>01 — About</p>
-          <h2 data-reveal style="--delay: 0.05s">A maths student with a sci-fi habit.</h2>
-
-          <dl class="intro-now" data-reveal style="--delay: 0.1s">
-            <div>
-              <dt>Currently building</dt>
-              <dd>Infinity, and whatever capability it is missing next.</dd>
-            </div>
-            <div>
-              <dt>Learning</dt>
-              <dd>Networking, Linux, and how much can be self-hosted.</dd>
-            </div>
-            <div>
-              <dt>Off the keyboard</dt>
-              <dd>Running, cycling, and collecting finish lines.</dd>
-            </div>
-            <div>
-              <dt>Based in</dt>
-              <dd>Kolkata, India. Usually near a terminal.</dd>
-            </div>
-          </dl>
+    <section class="section toolbox" id="toolbox">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label" data-reveal>01 — Toolbox</p>
+          <h2 data-reveal style="--delay: 0.05s">Things I've actually shipped with.</h2>
         </div>
 
-        <div class="intro-body">
-          <p class="lede" data-reveal>
-            I'm Modassir. I come from a Physics, Chemistry, Maths and Computer Science background,
-            which is probably why I keep taking problems apart instead of walking around them.
-          </p>
+        <div class="tool-grid">
+          <article class="tool-group" data-reveal>
+            <span class="tnum">01</span>
+            <h3>AI &amp; language</h3>
+            <ul>
+              <li>Python</li>
+              <li>llama.cpp</li>
+              <li>Ollama</li>
+              <li>LM Studio</li>
+              <li>Unsloth</li>
+              <li>OpenAI-compatible APIs</li>
+              <li>Prompt engineering</li>
+            </ul>
+          </article>
 
-          <p data-reveal>
-            My first real target was <strong>Jarvis from Iron Man</strong>. I wanted an assistant that could
-            actually use my computer: see the screen, read files, search the web, remember what mattered.
-            That project became <a class="text-link" href="projects/infinity.html">Infinity</a>, and it is still growing.
-          </p>
+          <article class="tool-group" data-reveal style="--delay: 0.05s">
+            <span class="tnum">02</span>
+            <h3>Vision</h3>
+            <ul>
+              <li>YOLO</li>
+              <li>DETR / RT-DETR</li>
+              <li>OpenCV</li>
+              <li>MediaPipe</li>
+              <li>Face recognition</li>
+              <li>UI grounding</li>
+            </ul>
+          </article>
 
-          <p data-reveal>
-            Along the way I got pulled into local models: llama.cpp, Ollama, LM Studio, OpenAI-compatible
-            endpoints, prompt engineering. I trained vision models for hand detection, face recognition and
-            screen UI objects. I also fine-tuned a small <strong>Gemma 3 1B</strong> model on a 4 GB GPU using Unsloth's
-            memory-optimized training to mimic my WhatsApp style. Equal parts research and vanity.
-          </p>
+          <article class="tool-group" data-reveal style="--delay: 0.1s">
+            <span class="tnum">03</span>
+            <h3>Build</h3>
+            <ul>
+              <li>Flask</li>
+              <li>Rich</li>
+              <li>PyAutoGUI</li>
+              <li>MSS</li>
+              <li>pypdf</li>
+              <li>Git</li>
+            </ul>
+          </article>
 
-          <div class="pull-quote" data-reveal>
-            <span>Field note</span>
-            <p>If it sounds slightly fictional, that is usually the sign I want to try it.</p>
-          </div>
+          <article class="tool-group" data-reveal style="--delay: 0.15s">
+            <span class="tnum">04</span>
+            <h3>Systems</h3>
+            <ul>
+              <li>Linux · Arch / WSL</li>
+              <li>Tailscale</li>
+              <li>Pi-hole</li>
+              <li>SearXNG</li>
+              <li>Playit.gg</li>
+              <li>Cloudflare</li>
+            </ul>
+          </article>
+        </div>
 
-          <p data-reveal>
-            I wrote a small neural network in plain Python and trained it on MNIST, mostly to make sure I
-            understood the maths instead of importing it. Lately I spend more time on networking and
-            self-hosting: Pi-hole, SearXNG, Tailscale, Playit.gg, a Minecraft server, a Flask app or two.
-            Arch inside WSL has been the hard, useful part.
-          </p>
-
-          <p data-reveal>
-            Off the keyboard, I run and cycle. The 10K and the 100 km ride started as a way to stay healthy.
-            They turned into another kind of debugging.
-          </p>
-
-          <div class="signoff" data-reveal>
-            <span class="hand">— Modassir</span>
-            <span>still tinkering</span>
-          </div>
+        <div class="tool-note" data-reveal>
+          <span>Foundations: Physics, Chemistry, Maths, Computer Science.</span>
+          <span class="hand">I don't list things I've only watched a video about.</span>
         </div>
       </div>
     </section>
@@ -414,10 +364,7 @@
                     <circle cx="116" cy="125" r="3.2"/><circle cx="120" cy="88" r="3.2"/><circle cx="123" cy="66" r="3.2"/><circle cx="126" cy="50" r="3.6"/>
                     <circle cx="132" cy="134" r="3.2"/><circle cx="142" cy="105" r="3.2"/><circle cx="148" cy="86" r="3.2"/><circle cx="152" cy="72" r="3.6"/>
                   </g>
-                  <circle class="tip" cx="77" cy="50" r="5"/>
-                  <circle class="tip" cx="100" cy="40" r="5"/>
-                  <circle class="tip" cx="126" cy="50" r="5"/>
-                  <circle class="tip" cx="152" cy="72" r="5"/>
+                  <circle class="tip" cx="77" cy="50" r="5"/><circle class="tip" cx="100" cy="40" r="5"/><circle class="tip" cx="126" cy="50" r="5"/><circle class="tip" cx="152" cy="72" r="5"/>
                   <path d="M77 50l-9-9m0 0 5-1m-5 1 1 5" fill="none" stroke="#f4ece1" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
               </div>
@@ -462,115 +409,11 @@
         </div>
       </div>
     </section>
-
-    <section class="section toolbox" id="toolbox">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="label" data-reveal>03 — Toolbox</p>
-          <h2 data-reveal style="--delay: 0.05s">Things I've actually shipped with.</h2>
-        </div>
-
-        <div class="tool-grid">
-          <article class="tool-group" data-reveal>
-            <span class="tnum">01</span>
-            <h3>AI &amp; language</h3>
-            <ul>
-              <li>Python</li>
-              <li>llama.cpp</li>
-              <li>Ollama</li>
-              <li>LM Studio</li>
-              <li>Unsloth</li>
-              <li>OpenAI-compatible APIs</li>
-              <li>Prompt engineering</li>
-            </ul>
-          </article>
-
-          <article class="tool-group" data-reveal style="--delay: 0.05s">
-            <span class="tnum">02</span>
-            <h3>Vision</h3>
-            <ul>
-              <li>YOLO</li>
-              <li>DETR / RT-DETR</li>
-              <li>OpenCV</li>
-              <li>MediaPipe</li>
-              <li>Face recognition</li>
-              <li>UI grounding</li>
-            </ul>
-          </article>
-
-          <article class="tool-group" data-reveal style="--delay: 0.1s">
-            <span class="tnum">03</span>
-            <h3>Build</h3>
-            <ul>
-              <li>Flask</li>
-              <li>Rich</li>
-              <li>PyAutoGUI</li>
-              <li>MSS</li>
-              <li>pypdf</li>
-              <li>Git</li>
-            </ul>
-          </article>
-
-          <article class="tool-group" data-reveal style="--delay: 0.15s">
-            <span class="tnum">04</span>
-            <h3>Systems</h3>
-            <ul>
-              <li>Linux · Arch / WSL</li>
-              <li>Tailscale</li>
-              <li>Pi-hole</li>
-              <li>SearXNG</li>
-              <li>Playit.gg</li>
-              <li>Cloudflare</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="tool-note" data-reveal>
-          <span>Foundations: Physics, Chemistry, Maths, Computer Science.</span>
-          <span class="hand">I don't list things I've only watched a video about.</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="beyond">
-      <div class="wrap beyond-grid">
-        <div class="beyond-copy">
-          <p class="label" data-reveal>04 — Off the screen</p>
-          <h2 data-reveal style="--delay: 0.05s">Proof that I can keep going.</h2>
-          <p data-reveal>
-            Marathons and long rides are the same skill as debugging a local setup: stay with the boring
-            part long enough for the interesting part to happen.
-          </p>
-          <div data-reveal>
-            <a class="link-arrow" href="certificates.html">
-              See certificates &amp; milestones
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="race-stack">
-          <div class="race-card" data-reveal>
-            <span class="rlabel">Kolkata Full Marathon · 2026</span>
-            <strong>1:10:37</strong>
-            <p>10K finisher<br>Bib 13613</p>
-            <a href="certificates.html#kolkata" aria-label="See the Kolkata 10K certificate"></a>
-          </div>
-          <div class="race-card" data-reveal style="--delay: 0.06s">
-            <span class="rlabel">Longest ride · 15 July 2026</span>
-            <strong>98.27 km</strong>
-            <p>18.1 km/h average<br>13 personal bests</p>
-            <a href="certificates.html#cycling" aria-label="See the 100K cycling milestone"></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="contact-band" id="contact">
       <div class="wrap">
         <div class="contact-grid">
           <div class="contact-copy">
-            <p class="label">05 — Contact</p>
+            <p class="label">03 — Contact</p>
             <h2 class="display">Have an idea that shouldn't work? <em>Good.</em></h2>
             <p>
               I'm up for conversations about local AI, computer vision, self-hosting, or a project
