@@ -55,7 +55,7 @@ are local serif/sans fallbacks if the network is unavailable.
 
 ## Media
 
-- Certificate previews in `assets/img/certs/` are JPEGs, longest edge 1800 px.
+- Certificate previews in `assets/img/certs/` are 6 JPEGs (1800px longest edge), already generated from PDFs.
 - Original PDFs are in `assets/docs/` and are linked from the certificate cards.
 - Project artwork is CSS and inline SVG, not screenshots.
 
