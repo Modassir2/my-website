@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Organizing System — local vision sorting | Modassir Iqbal</title>
+  <meta name="description" content="Image Organizing System uses a local vision model to read images and file them into categories you define. Copy, never move. Resumable, logged, and local-first.">
+  <meta name="theme-color" content="#f3ede3">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&amp;family=DM+Mono:wght@400;500&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("mi-theme");
+        if (theme === "dark") document.documentElement.dataset.theme = "dark";
+      } catch (error) {}
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html" aria-label="MI Modassir Iqbal — home">
+        <span class="brand-mark" aria-hidden="true">MI</span>
+        <span class="brand-text">Modassir <em>Iqbal</em></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../certificates.html">Certificates</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.7A8.2 8.2 0 0 1 9.3 4a8.2 8.2 0 1 0 10.7 10.7Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="breadcrumb" data-reveal>
+          <a href="../index.html">Home</a> <span>/</span> <a href="../projects.html">Projects</a> <span>/</span> Image Organizing System
+        </p>
+        <h1 class="display" data-reveal style="--delay: 0.05s">Image <br><em>Organizing.</em></h1>
+        <p class="page-lede" data-reveal style="--delay: 0.1s">
+          Point it at a messy folder. A local vision model reads each image and files it into categories
+          you actually chose.
+        </p>
+        <div class="page-meta" data-reveal style="--delay: 0.15s">
+          <span class="tag tag--accent">Main project · 04</span>
+          <span class="tag">Python</span>
+          <span class="tag">Vision models</span>
+          <span class="tag">Tool calling</span>
+          <span class="tag">Active</span>
+        </div>
+
+        <div class="project-visual" data-reveal style="--delay: 0.1s">
+          <div class="pvisual pvisual--sorter" aria-hidden="true">
+            <span class="sort-chip">qwen3.5:2b</span>
+            <div class="sort-stack">
+              <div class="sort-card"><span class="sort-label">receipts</span></div>
+              <div class="sort-card"><span class="sort-label">documents</span></div>
+              <div class="sort-card"><span class="sort-label">screenshots</span></div>
+            </div>
+            <div class="sort-progress">
+              <p><span>sorting · 62%</span><span>31 / 50</span></p>
+              <div class="bar"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap project-layout">
+      <aside class="project-side">
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Solo build</dd></div>
+          <div><dt>Interface</dt><dd>CLI, live progress</dd></div>
+          <div><dt>Model</dt><dd>qwen3.5:2b recommended</dd></div>
+          <div><dt>Status</dt><dd>Active</dd></div>
+          <div><dt>Repository</dt><dd><a href="https://github.com/Modassir2/image-organizing-system" target="_blank" rel="noopener noreferrer">github.com/Modassir2/image-organizing-system</a></dd></div>
+        </dl>
+        <a class="btn btn--primary" href="https://github.com/Modassir2/image-organizing-system" target="_blank" rel="noopener noreferrer">
+          View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </aside>
+
+      <article class="project-article">
+        <section class="article-block">
+          <h2>Why it exists</h2>
+          <p>
+            I had folders full of screenshots, receipts, documents, and memes that I kept meaning to sort.
+            Doing it by hand was boring. Sending them to a cloud API was not the point.
+          </p>
+          <p>
+            The useful version of this tool is local, copies instead of moves, and lets me define the
+            categories. It does not decide that my life should be organised into someone else's taxonomy.
+          </p>
+          <blockquote class="readme-quote">
+            <p>Point it at a folder full of images. A vision model reads each one and files it into the categories you define — live progress and all.</p>
+            <cite>README.md · Image Organizing System</cite>
+          </blockquote>
+        </section>
+
+        <section class="article-block">
+          <h2>What it does</h2>
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fnum">01</span>
+              <h3>Stays local</h3>
+              <p>With a local server, no image or prompt leaves the machine. Nothing is uploaded or logged by a third party.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">02</span>
+              <h3>Copies, never moves</h3>
+              <p>Originals stay exactly where they are. Sorted files land in <span class="mono">output/&lt;category&gt;/</span>.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">03</span>
+              <h3>Your categories</h3>
+              <p>One JSON file for the category list, one Markdown file for the prompt. Nothing is hardcoded.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">04</span>
+              <h3>No silent failures</h3>
+              <p>Warnings and errors go to a JSON-lines log that can actually be parsed.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">05</span>
+              <h3>Resumable</h3>
+              <p>Interrupted a 5,000-image run? Restart and pick up where it stopped.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">06</span>
+              <h3>Handles flaky setups</h3>
+              <p>Unplug the external drive or drop the server mid-run, and it waits and retries instead of dying.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>How it works</h2>
+          <div class="flow">
+            <span>image folder</span><b>→</b>
+            <span>base64 data URL</span><b>→</b>
+            <span class="hot">vision model</span><b>→</b>
+            <span class="hot">sort_image tool call</span><b>→</b>
+            <span>enum validation</span><b>→</b>
+            <span>output/&lt;category&gt;/</span>
+          </div>
+          <ol class="steps">
+            <li>
+              <div>
+                <strong>Walk the folder.</strong>
+                <p>Recursively counts <span class="mono">.jpg</span>, <span class="mono">.jpeg</span>, and <span class="mono">.png</span> files, then works through them with live directory and total progress.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Send the image and the instructions.</strong>
+                <p>Each image is base64-encoded and sent to an OpenAI-compatible vision endpoint with the category prompt.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Force a tool call.</strong>
+                <p>The model must answer through a single <span class="mono">sort_image</span> call. The <span class="mono">category</span> argument is an enum built from <span class="mono">categories.json</span>, so anything outside the list is rejected and retried.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Verify, copy, log.</strong>
+                <p>The returned category is checked against the list, the file is copied into the matching output folder, and the run moves on. Failures after three bad requests are skipped and logged.</p>
+              </div>
+            </li>
+          </ol>
+
+          <pre class="code-block" data-label="live progress — the actual output shape"><code>Current Directory:             ./Photos/2024
+Dir Progress:                  ###############################------------------- | 62.00% [31/50]
+Total Progress:                ################---------------------------------- | 33.67% [101/300]
+Processing:                    IMG_0432.jpg
+Estimated Time Remaining:      4 Min(s) 12 Sec  [7.4 sec per Image]</code></pre>
+        </section>
+
+        <section class="article-block">
+          <h2>Requirements, honestly</h2>
+          <div style="overflow-x:auto">
+            <table class="data-table">
+              <thead>
+                <tr><th>Requirement</th><th>Detail</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Python</td><td>3.9+ (developed and tested on 3.13.3)</td></tr>
+                <tr><td>Model</td><td><span class="mono">qwen3.5:2b</span> recommended; any vision-capable model with function calling works</td></tr>
+                <tr><td>Server</td><td>An OpenAI-compatible endpoint, local or cloud</td></tr>
+                <tr><td>Tool calling</td><td>Not optional. The classifier only reads the <span class="mono">sort_image</span> tool call.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="note-box">
+            <strong>Why the 2B model:</strong> it is small enough to run on a laptop CPU, good at reading
+            printed and handwritten document text, and supports tool calling without extra setup. Bigger
+            vision models help on dense or low-quality scans.
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>What the README says</h2>
+          <ul>
+            <li>Local-first: no image or prompt leaves the machine when using a local server</li>
+            <li>Copy, never move: originals stay where they are</li>
+            <li>Bring your own categories through a JSON file and a Markdown prompt</li>
+            <li>Warnings and errors go to a JSON-lines log</li>
+            <li>Resumable after an interruption</li>
+            <li>Waits and retries when a drive or server drops mid-run</li>
+          </ul>
+          <div class="readme-link-row">
+            <a class="link-arrow" href="https://github.com/Modassir2/image-organizing-system#readme" target="_blank" rel="noopener noreferrer">
+              Read the full README on GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>Stack</h2>
+          <div class="tags">
+            <span class="tag">Python 3.9+</span>
+            <span class="tag">OpenAI-compatible vision endpoint</span>
+            <span class="tag">qwen3.5:2b</span>
+            <span class="tag">Tool calling</span>
+            <span class="tag">JSONL logging</span>
+            <span class="tag">llama.cpp / Ollama / LM Studio</span>
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>What's next</h2>
+          <p>
+            A dry-run mode, a clearer preview before anything is copied, and better handling for folders
+            where one image belongs in more than one category. The current enum keeps the model honest;
+            the next version needs to keep it useful.
+          </p>
+
+          <nav class="project-pager" aria-label="Project navigation">
+            <a href="gesture-control.html">
+              <small>← Previous</small>
+              <strong>Gesture Control</strong>
+            </a>
+            <a href="infinity.html">
+              <small>Next →</small>
+              <strong>Infinity</strong>
+            </a>
+          </nav>
+        </section>
+      </article>
+    </div>
+
+    <section class="cta-band">
+      <div class="wrap cta-inner">
+        <div>
+          <h2>Have a folder that needs sorting?</h2>
+          <p>The README has the setup, the category format, and the model notes.</p>
+        </div>
+        <a class="btn btn--primary" href="https://github.com/Modassir2/image-organizing-system" target="_blank" rel="noopener noreferrer">
+          Open the repository
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Modassir Iqbal</p>
+      <p>Built by hand in HTML, CSS &amp; vanilla JS. No page builder.</p>
+      <p><a href="#main">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Modassir Iqbal</title>
+  <meta name="description" content="Main GitHub projects and side experiments by Modassir Iqbal: local AI assistants, computer vision, image sorting, fine-tunes, and a homelab.">
+  <meta name="theme-color" content="#f3ede3">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&amp;family=DM+Mono:wght@400;500&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("mi-theme");
+        if (theme === "dark") document.documentElement.dataset.theme = "dark";
+      } catch (error) {}
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="MI Modassir Iqbal — home">
+        <span class="brand-mark" aria-hidden="true">MI</span>
+        <span class="brand-text">Modassir <em>Iqbal</em></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.7A8.2 8.2 0 0 1 9.3 4a8.2 8.2 0 1 0 10.7 10.7Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="breadcrumb" data-reveal><a href="index.html">Home</a> <span>/</span> Projects</p>
+        <h1 class="display" data-reveal style="--delay: 0.05s">Things I've <br><em>actually shipped.</em></h1>
+        <p class="page-lede" data-reveal style="--delay: 0.1s">
+          The main projects are on GitHub, with notes pulled straight from their READMEs.
+          The side projects are the experiments, homelab pieces, and training runs that don't need
+          their own repository.
+        </p>
+        <div class="page-meta" data-reveal style="--delay: 0.15s">
+          <span class="tag tag--accent">04 main projects</span>
+          <span class="tag">05 side projects</span>
+          <span class="tag">Python, mostly</span>
+          <span class="tag">Status: still tinkering</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="main-projects">
+      <div class="wrap">
+        <div class="side-head">
+          <div>
+            <p class="label" data-reveal>01 — Main projects</p>
+            <h2 data-reveal style="--delay: 0.04s">The GitHub four.</h2>
+          </div>
+          <p data-reveal style="--delay: 0.08s">
+            These have a repo, a README, and a reason to exist. Each card links to the code and to a
+            longer build note.
+          </p>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card" data-reveal>
+            <a class="work-visual" href="projects/infinity.html" tabindex="-1" aria-hidden="true">
+              <span class="work-index">01</span>
+              <div class="pvisual pvisual--infinity" aria-hidden="true">
+                <div class="viz-ring"></div>
+                <div class="viz-term">
+                  <div class="viz-bar"><i></i><i></i><i></i><span>infinity — zsh</span></div>
+                  <div class="viz-term-body">
+                    <p><span class="dim">$</span> python main.py</p>
+                    <p><span class="ok">●</span> qwen3.5_4b <span class="dim">· 32k ctx</span></p>
+                    <p><span class="ok">●</span> screen tools online</p>
+                    <p><span class="ok">●</span> memory restored</p>
+                    <p><span class="accent">you ›</span> open the file I was editing</p>
+                    <p class="dim">thinking<span class="blink">_</span></p>
+                  </div>
+                </div>
+                <span class="viz-tag">local-first</span>
+              </div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3><a href="projects/infinity.html">Infinity</a></h3>
+                <a class="gh-link" href="https://github.com/Modassir2/Infinity" target="_blank" rel="noopener noreferrer">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+              <p class="work-tagline">The Jarvis project. A terminal-first assistant that can look at the screen, read files, search the web, and change tools mid-task.</p>
+              <ul class="work-points">
+                <li>Switches tool sets at runtime with <span class="mono">get_tools</span></li>
+                <li>Sees the desktop, including multi-monitor setups</li>
+                <li>Keeps memory and conversation history between sessions</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Local LLMs</span>
+                <span class="tag">SearXNG</span>
+                <span class="tag">Desktop automation</span>
+              </div>
+              <div class="work-foot">
+                <a class="link-arrow" href="projects/infinity.html">Read the build notes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <span class="status">Active</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal style="--delay: 0.05s">
+            <a class="work-visual" href="projects/desktop-assistant.html" tabindex="-1" aria-hidden="true">
+              <span class="work-index">02</span>
+              <div class="pvisual pvisual--dark pvisual--desktop" aria-hidden="true">
+                <div class="tui">
+                  <div class="viz-bar"><i></i><i></i><i></i><span>desktop-assistant</span></div>
+                  <div class="tui-inner">
+                    <p class="rule">╭─ DESKTOP ASSISTANT ──────────╮</p>
+                    <p><span class="key">model</span>     qwen3-vl-4b</p>
+                    <p><span class="key">endpoint</span>  127.0.0.1:8002</p>
+                    <p class="rule">╰──────────────────────────────╯</p>
+                    <p><span class="accent">›</span> open settings, turn on dark mode</p>
+                    <p><span class="key">planning</span>  ▸ screenshot</p>
+                    <p><span class="key">acting</span>    ▸ click (842, 96)</p>
+                    <p><span class="go">done</span>      ✓</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3><a href="projects/desktop-assistant.html">Desktop Assistant</a></h3>
+                <a class="gh-link" href="https://github.com/Modassir2/desktop-assistant" target="_blank" rel="noopener noreferrer">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+              <p class="work-tagline">A lightweight TUI agent for the desktop. No browser tab, no dashboard, no ceremony — just a prompt and a local model.</p>
+              <ul class="work-points">
+                <li>Runs fully locally with LM Studio, Ollama or llama.cpp</li>
+                <li>Image-aware context with configurable token budgets</li>
+                <li>Keyboard-driven terminal interface built with Rich</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">TUI</span>
+                <span class="tag">Qwen3-VL</span>
+                <span class="tag">LM Studio</span>
+              </div>
+              <div class="work-foot">
+                <a class="link-arrow" href="projects/desktop-assistant.html">Read the build notes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <span class="status">Evolving</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal>
+            <a class="work-visual" href="projects/gesture-control.html" tabindex="-1" aria-hidden="true">
+              <span class="work-index">03</span>
+              <div class="pvisual pvisual--dark pvisual--gesture" aria-hidden="true">
+                <span class="viz-tag">hand landmarks · 21</span>
+                <span class="viz-tag">fps 31</span>
+                <svg class="hand-svg" viewBox="0 0 200 210" aria-hidden="true">
+                  <path class="trail" d="M40 185C60 205 145 205 165 180"/>
+                  <g class="bones">
+                    <path d="M100 172 78 156 60 135 48 116 42 100"/>
+                    <path d="M100 172 84 125 80 90 78 68 77 50"/>
+                    <path d="M100 172 100 122 100 82 100 58 100 40"/>
+                    <path d="M100 172 116 125 120 88 123 66 126 50"/>
+                    <path d="M100 172 132 134 142 105 148 86 152 72"/>
+                    <path d="M84 125 100 122 116 125 132 134"/>
+                    <path d="M78 156 100 122"/>
+                    <path d="M60 135 100 122"/>
+                  </g>
+                  <g class="joints">
+                    <circle cx="100" cy="172" r="4.5"/>
+                    <circle cx="78" cy="156" r="3.2"/><circle cx="60" cy="135" r="3.2"/><circle cx="48" cy="116" r="3.2"/><circle cx="42" cy="100" r="3.6"/>
+                    <circle cx="84" cy="125" r="3.2"/><circle cx="80" cy="90" r="3.2"/><circle cx="78" cy="68" r="3.2"/><circle cx="77" cy="50" r="3.6"/>
+                    <circle cx="100" cy="122" r="3.2"/><circle cx="100" cy="82" r="3.2"/><circle cx="100" cy="58" r="3.2"/><circle cx="100" cy="40" r="3.6"/>
+                    <circle cx="116" cy="125" r="3.2"/><circle cx="120" cy="88" r="3.2"/><circle cx="123" cy="66" r="3.2"/><circle cx="126" cy="50" r="3.6"/>
+                    <circle cx="132" cy="134" r="3.2"/><circle cx="142" cy="105" r="3.2"/><circle cx="148" cy="86" r="3.2"/><circle cx="152" cy="72" r="3.6"/>
+                  </g>
+                  <circle class="tip" cx="77" cy="50" r="5"/><circle class="tip" cx="100" cy="40" r="5"/><circle class="tip" cx="126" cy="50" r="5"/><circle class="tip" cx="152" cy="72" r="5"/>
+                  <path d="M77 50l-9-9m0 0 5-1m-5 1 1 5" fill="none" stroke="#f4ece1" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3><a href="projects/gesture-control.html">Gesture Control</a></h3>
+                <a class="gh-link" href="https://github.com/Modassir2/Gesture-Control" target="_blank" rel="noopener noreferrer">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+              <p class="work-tagline">A Windows desktop mouse controller that turns hand gestures into movement, clicks, scrolling and drag-and-drop.</p>
+              <ul class="work-points">
+                <li>MediaPipe hand landmarks from a live webcam feed</li>
+                <li>Move, click, scroll, and hold without touching the mouse</li>
+                <li>Live preview with landmarks, gesture status and FPS</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">MediaPipe</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">PyAutoGUI</span>
+              </div>
+              <div class="work-foot">
+                <a class="link-arrow" href="projects/gesture-control.html">Read the build notes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <span class="status">Prototype</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal style="--delay: 0.05s">
+            <a class="work-visual" href="projects/image-organizing-system.html" tabindex="-1" aria-hidden="true">
+              <span class="work-index work-index--light">04</span>
+              <div class="pvisual pvisual--sorter" aria-hidden="true">
+                <span class="sort-chip">qwen3.5:2b</span>
+                <div class="sort-stack">
+                  <div class="sort-card"><span class="sort-label">receipts</span></div>
+                  <div class="sort-card"><span class="sort-label">documents</span></div>
+                  <div class="sort-card"><span class="sort-label">screenshots</span></div>
+                </div>
+                <div class="sort-progress">
+                  <p><span>sorting · 62%</span><span>31 / 50</span></p>
+                  <div class="bar"><span></span></div>
+                </div>
+              </div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3><a href="projects/image-organizing-system.html">Image Organizing System</a></h3>
+                <a class="gh-link" href="https://github.com/Modassir2/image-organizing-system" target="_blank" rel="noopener noreferrer">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+              <p class="work-tagline">Point it at a messy folder. A vision model reads each image and files it into categories you actually chose.</p>
+              <ul class="work-points">
+                <li>Works with any OpenAI-compatible vision endpoint</li>
+                <li>Categories in one JSON file; prompts in one Markdown file</li>
+                <li>Copies, never moves. Resumes after an interruption.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Vision models</span>
+                <span class="tag">Tool calling</span>
+                <span class="tag">Local-first</span>
+              </div>
+              <div class="work-foot">
+                <a class="link-arrow" href="projects/image-organizing-system.html">Read the build notes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <span class="status">Active</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="side">
+      <div class="wrap">
+        <div class="side-head">
+          <div>
+            <p class="label" data-reveal>02 — Side projects</p>
+            <h2 data-reveal style="--delay: 0.04s">The experiments.</h2>
+          </div>
+          <p data-reveal style="--delay: 0.08s">
+            No repo, no landing page. These are things I wanted to understand, or things that needed
+            to exist in my own setup.
+          </p>
+        </div>
+
+        <div class="side-grid">
+          <article class="side-card side-card--wide" data-reveal>
+            <div class="side-copy">
+              <span class="side-num">01 · Local infrastructure</span>
+              <h3>A model server I actually run</h3>
+              <p>
+                llama.cpp in router mode on port 8002, with six model presets and on-demand loading.
+                Gemma and Qwen builds share one OpenAI-compatible endpoint without restarting the server.
+                This is what Infinity and most of my experiments talk to.
+              </p>
+              <div class="tags">
+                <span class="tag">llama.cpp</span>
+                <span class="tag">Router mode</span>
+                <span class="tag">6 presets</span>
+                <span class="tag">OpenAI-compatible</span>
+              </div>
+            </div>
+            <button class="side-shot" type="button"
+              data-lightbox-src="assets/img/certs/api-server.jpg"
+              data-lightbox-alt="llama.cpp router server running with six model presets"
+              data-lightbox-caption="llama.cpp in router mode, port 8002, six model presets loaded. Screenshot from my own machine.">
+              <img src="assets/img/certs/api-server.jpg" alt="llama.cpp router server showing six model presets on port 8002" width="1800" height="965" loading="lazy">
+              <span class="shot-cta">View the server ↗</span>
+            </button>
+          </article>
+
+          <article class="side-card" data-reveal style="--delay: 0.05s">
+            <span class="side-num">02 · Fine-tune</span>
+            <h3>Gemma 3 1B, on 4 GB of VRAM</h3>
+            <p>
+              Fine-tuned a small Gemma 3 1B model using Unsloth's memory-optimized training to mimic
+              the way I text on WhatsApp. Tight hardware, small model, surprisingly recognisable results.
+            </p>
+            <div class="tags">
+              <span class="tag">Unsloth</span>
+              <span class="tag">Gemma 3</span>
+              <span class="tag">LoRA</span>
+              <span class="tag">4 GB VRAM</span>
+            </div>
+          </article>
+
+          <article class="side-card" data-reveal>
+            <span class="side-num">03 · Vision</span>
+            <h3>Teaching a model to see a screen</h3>
+            <p>
+              Trained YOLO and DETR-family models for hand detection, face recognition, and classifying
+              UI objects on a screen. The screen-object work was the groundwork for giving an assistant eyes.
+            </p>
+            <div class="tags">
+              <span class="tag">YOLO</span>
+              <span class="tag">RT-DETR</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">UI grounding</span>
+            </div>
+          </article>
+
+          <article class="side-card side-card--wide" data-reveal style="--delay: 0.05s">
+            <div class="side-copy">
+              <span class="side-num">04 · Foundations</span>
+              <h3>A neural network, from scratch</h3>
+              <p>
+                A small neural network written in plain Python and trained on the classic MNIST handwritten
+                digits dataset. Built to make sure I understood the maths instead of importing it.
+              </p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">MNIST</span>
+                <span class="tag">Backpropagation</span>
+              </div>
+            </div>
+            <button class="side-shot" type="button"
+              data-lightbox-src="assets/img/certs/neural-network.jpg"
+              data-lightbox-alt="Jupyter notebook testing the from-scratch MNIST network on a handwritten 3, with per-digit confidence scores and a prediction of 3"
+              data-lightbox-caption="Testing the from-scratch MNIST network on my own handwritten 3: 28×28 input, ten output scores, and a prediction of 3 at 54.71% confidence.">
+              <img src="assets/img/certs/neural-network.jpg" alt="Jupyter notebook showing a handwritten 3 and the neural network's per-digit confidence scores" width="1800" height="1012" loading="lazy">
+              <span class="shot-readout" aria-hidden="true">
+                <span class="shot-row"><span class="shot-k">Prediction:</span><span class="shot-v">3</span></span>
+                <span class="shot-row"><span class="shot-k">Confidence:</span><span class="shot-v">55%</span></span>
+              </span>
+              <span class="shot-cta">View the notebook ↗</span>
+            </button>
+          </article>
+
+          <article class="side-card" data-reveal style="--delay: 0.1s">
+            <span class="side-num">05 · Homelab</span>
+            <h3>The network in my room</h3>
+            <p>
+              Pi-hole for network-wide DNS blocking, a self-hosted SearXNG search engine, Tailscale for a
+              mesh VPN, Playit.gg for a Minecraft Java server, and a Flask app or two. Most of it runs through
+              Arch inside WSL, which is where I learned the most.
+            </p>
+            <div class="tags">
+              <span class="tag">Pi-hole</span>
+              <span class="tag">SearXNG</span>
+              <span class="tag">Tailscale</span>
+              <span class="tag">WSL / Arch</span>
+              <span class="tag">Flask</span>
+            </div>
+          </article>
+
+          <div class="side-quote" data-reveal>
+            <span class="hand">The useful accidents happen here.</span>
+            <p>Side projects are where a random experiment becomes the next main project. The image sorter started that way.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap cta-inner">
+        <div>
+          <h2>Want the longer version of any of these?</h2>
+          <p>The build notes include the README details, decisions, and what I'd change next.</p>
+        </div>
+        <a class="btn btn--primary" href="projects/infinity.html">
+          Start with Infinity
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Modassir Iqbal</p>
+      <p>Built by hand in HTML, CSS &amp; vanilla JS. No page builder.</p>
+      <p><a href="#main">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" data-lightbox aria-label="Project screenshot viewer">
+    <div class="lightbox-inner">
+      <div class="lightbox-stage">
+        <button class="lightbox-btn lightbox-btn--close" type="button" data-lightbox-close aria-label="Close viewer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+        <img data-lightbox-img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+      </div>
+      <div class="lightbox-bar">
+        <p class="lightbox-caption" data-lightbox-caption></p>
+        <div class="lightbox-actions">
+          <span class="lightbox-count" data-lightbox-count>01 / 01</span>
+          <button class="lightbox-btn" type="button" data-lightbox-prev aria-label="Previous item">←</button>
+          <button class="lightbox-btn" type="button" data-lightbox-next aria-label="Next item">→</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

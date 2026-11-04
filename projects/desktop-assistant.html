@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desktop Assistant — a local TUI agent | Modassir Iqbal</title>
+  <meta name="description" content="Desktop Assistant is a lightweight terminal-based agent by Modassir Iqbal. It runs fully locally with LM Studio, Ollama, or llama.cpp and uses image-capable models to drive the desktop.">
+  <meta name="theme-color" content="#f3ede3">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&amp;family=DM+Mono:wght@400;500&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("mi-theme");
+        if (theme === "dark") document.documentElement.dataset.theme = "dark";
+      } catch (error) {}
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html" aria-label="MI Modassir Iqbal — home">
+        <span class="brand-mark" aria-hidden="true">MI</span>
+        <span class="brand-text">Modassir <em>Iqbal</em></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../certificates.html">Certificates</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.7A8.2 8.2 0 0 1 9.3 4a8.2 8.2 0 1 0 10.7 10.7Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="breadcrumb" data-reveal>
+          <a href="../index.html">Home</a> <span>/</span> <a href="../projects.html">Projects</a> <span>/</span> Desktop Assistant
+        </p>
+        <h1 class="display" data-reveal style="--delay: 0.05s">Desktop <br><em>Assistant.</em></h1>
+        <p class="page-lede" data-reveal style="--delay: 0.1s">
+          A small TUI agent that lives entirely on the machine. No browser tab, no dashboard, no ceremony.
+        </p>
+        <div class="page-meta" data-reveal style="--delay: 0.15s">
+          <span class="tag tag--accent">Main project · 02</span>
+          <span class="tag">Python</span>
+          <span class="tag">TUI</span>
+          <span class="tag">Qwen3-VL</span>
+          <span class="tag">Evolving</span>
+        </div>
+
+        <div class="project-visual" data-reveal style="--delay: 0.1s">
+          <div class="pvisual pvisual--dark pvisual--desktop" aria-hidden="true">
+            <div class="tui">
+              <div class="viz-bar"><i></i><i></i><i></i><span>desktop-assistant</span></div>
+              <div class="tui-inner">
+                <p class="rule">╭─ DESKTOP ASSISTANT ──────────╮</p>
+                <p><span class="key">model</span>     qwen3-vl-4b</p>
+                <p><span class="key">endpoint</span>  127.0.0.1:8002</p>
+                <p class="rule">╰──────────────────────────────╯</p>
+                <p><span class="accent">›</span> open settings, turn on dark mode</p>
+                <p><span class="key">planning</span>  ▸ screenshot</p>
+                <p><span class="key">acting</span>    ▸ click (842, 96)</p>
+                <p><span class="go">done</span>      ✓</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap project-layout">
+      <aside class="project-side">
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Solo build</dd></div>
+          <div><dt>Interface</dt><dd>Terminal / TUI</dd></div>
+          <div><dt>Models</dt><dd>Image-capable, tool calling</dd></div>
+          <div><dt>Status</dt><dd>Evolving</dd></div>
+          <div><dt>Repository</dt><dd><a href="https://github.com/Modassir2/desktop-assistant" target="_blank" rel="noopener noreferrer">github.com/Modassir2/desktop-assistant</a></dd></div>
+        </dl>
+        <a class="btn btn--primary" href="https://github.com/Modassir2/desktop-assistant" target="_blank" rel="noopener noreferrer">
+          View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </aside>
+
+      <article class="project-article">
+        <section class="article-block">
+          <h2>Why it exists</h2>
+          <p>
+            I wanted a second pair of hands that could drive the desktop without a heavy GUI. Something
+            that opens in a terminal, sees a screenshot, and does one useful thing. Not another chat window
+            pretending to be an operating system.
+          </p>
+          <blockquote class="readme-quote">
+            <p>A lightweight, terminal-based (TUI) desktop assistant designed for speed and efficiency.</p>
+            <cite>README.md · Desktop Assistant</cite>
+          </blockquote>
+        </section>
+
+        <section class="article-block">
+          <h2>What it does</h2>
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fnum">01</span>
+              <h3>A real terminal UI</h3>
+              <p>Rich output, structured data, and a prompt that stays out of the way. No browser process required.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">02</span>
+              <h3>100% local support</h3>
+              <p>Tested against LM Studio, Ollama, and llama.cpp's OpenAI-compatible server. Cloud endpoints work too.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">03</span>
+              <h3>Image-aware context</h3>
+              <p>Screenshots are part of the conversation. Token budgets decide how many images stay in history.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">04</span>
+              <h3>Keyboard driven</h3>
+              <p>No mouse-hunting through menus. Type, run, inspect the result, move on.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>Choosing a model</h2>
+          <p>
+            The README is opinionated here, which I like. It suggests looking at UI-grounding benchmarks
+            such as ScreenSpot and OSWorld, and aiming for <strong>75%+</strong> before expecting good results.
+            The recommendation is the largest Qwen3-VL model that fits, with a floor of 4B.
+          </p>
+          <p>
+            For low-end hardware, the tested setup is <strong>Qwen3-VL 4B at Q4_K_M</strong>, with an
+            <strong>mmproj at Q8_0</strong> rather than BF16. A shortened version of the server command:
+          </p>
+          <pre class="code-block" data-label="terminal — llama.cpp server"><code>llama-server.exe ^
+  --model Qwen3-VL-4B-Instruct-Q4_K_M.gguf ^
+  --mmproj mmproj-Qwen3-VL-4B-Instruct-q8_0.gguf ^
+  --flash-attn on ^
+  --ctx-size 8192 ^
+  --host 0.0.0.0 --port 8002 ^
+  --parallel 1 -ctv q8_0 -ctk q8_0</code></pre>
+          <div class="note-box">
+            <strong>Windows note:</strong> the <span class="mono">^</span> characters are line continuations
+            in cmd. In PowerShell, use a backtick or put the command on one line.
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>Configuration</h2>
+          <div style="overflow-x:auto">
+            <table class="data-table">
+              <thead>
+                <tr><th>Setting</th><th>What it controls</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>base_url</td><td>The OpenAI-compatible endpoint. LM Studio, Ollama, Groq, OpenRouter, xAI, Gemini, or OpenAI.</td></tr>
+                <tr><td>api_key</td><td>Required for paid platforms. Local models usually ignore it, so a placeholder is fine.</td></tr>
+                <tr><td>image_tokens</td><td>How many tokens one image consumes when the history is trimmed. Default is 1105.</td></tr>
+                <tr><td>max_tokens</td><td>The context window of the endpoint. 8192 is the tested minimum.</td></tr>
+                <tr><td>last_n_images</td><td>How many recent screenshots stay visible in history. The README recommends at least 3.</td></tr>
+                <tr><td>width / height</td><td>Monitor resolution used to turn model coordinates into real click positions.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>What the README says</h2>
+          <p>The repository describes it as:</p>
+          <ul>
+            <li>Rich terminal UI with pretty-printed console output</li>
+            <li>Local AI support tested on LM Studio, Ollama, and llama.cpp</li>
+            <li>Keyboard-driven commands without leaving the terminal</li>
+            <li>Lightweight, with no heavy GUI overhead</li>
+          </ul>
+          <p>
+            It also includes a practical warning about model choice: image support and reliable tool
+            calling are not optional here. A model that cannot ground a click is not going to drive a desktop.
+          </p>
+          <div class="readme-link-row">
+            <a class="link-arrow" href="https://github.com/Modassir2/desktop-assistant#readme" target="_blank" rel="noopener noreferrer">
+              Read the full README on GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>Stack</h2>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Rich</span>
+            <span class="tag">OpenAI-compatible endpoints</span>
+            <span class="tag">Qwen3-VL</span>
+            <span class="tag">llama.cpp</span>
+            <span class="tag">LM Studio</span>
+            <span class="tag">Ollama</span>
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>What's next</h2>
+          <p>
+            Tighter prompts, fewer wasted tokens, and better recovery when a click misses. The interesting
+            part is not the first successful action. It is what the agent does after something goes wrong.
+          </p>
+
+          <nav class="project-pager" aria-label="Project navigation">
+            <a href="infinity.html">
+              <small>← Previous</small>
+              <strong>Infinity</strong>
+            </a>
+            <a href="gesture-control.html">
+              <small>Next →</small>
+              <strong>Gesture Control</strong>
+            </a>
+          </nav>
+        </section>
+      </article>
+    </div>
+
+    <section class="cta-band">
+      <div class="wrap cta-inner">
+        <div>
+          <h2>Running a local vision model?</h2>
+          <p>Compare notes on grounding, tool calls, and keeping the context small.</p>
+        </div>
+        <a class="btn btn--primary" href="../index.html#contact">
+          Get in touch
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Modassir Iqbal</p>
+      <p>Built by hand in HTML, CSS &amp; vanilla JS. No page builder.</p>
+      <p><a href="#main">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infinity — a local-first desktop assistant | Modassir Iqbal</title>
+  <meta name="description" content="Infinity is a desktop-first AI assistant that runs in the terminal and switches tool sets at runtime: screen, files, web search, documents, and memory.">
+  <meta name="theme-color" content="#f3ede3">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&amp;family=DM+Mono:wght@400;500&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("mi-theme");
+        if (theme === "dark") document.documentElement.dataset.theme = "dark";
+      } catch (error) {}
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html" aria-label="MI Modassir Iqbal — home">
+        <span class="brand-mark" aria-hidden="true">MI</span>
+        <span class="brand-text">Modassir <em>Iqbal</em></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../certificates.html">Certificates</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.7A8.2 8.2 0 0 1 9.3 4a8.2 8.2 0 1 0 10.7 10.7Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="breadcrumb" data-reveal>
+          <a href="../index.html">Home</a> <span>/</span> <a href="../projects.html">Projects</a> <span>/</span> Infinity
+        </p>
+        <h1 class="display" data-reveal style="--delay: 0.05s">Infinity</h1>
+        <p class="page-lede" data-reveal style="--delay: 0.1s">
+          A desktop-first assistant that lives in the terminal and picks its tools to fit the task.
+          The Jarvis project, still in motion.
+        </p>
+        <div class="page-meta" data-reveal style="--delay: 0.15s">
+          <span class="tag tag--accent">Main project · 01</span>
+          <span class="tag">Python</span>
+          <span class="tag">Local LLMs</span>
+          <span class="tag">Desktop automation</span>
+          <span class="tag">Active</span>
+        </div>
+
+        <div class="project-visual" data-reveal style="--delay: 0.1s">
+          <div class="pvisual pvisual--infinity" aria-hidden="true">
+            <div class="viz-ring"></div>
+            <div class="viz-term">
+              <div class="viz-bar"><i></i><i></i><i></i><span>infinity — zsh</span></div>
+              <div class="viz-term-body">
+                <p><span class="dim">$</span> python main.py</p>
+                <p><span class="ok">●</span> qwen3.5_4b <span class="dim">· 32k ctx</span></p>
+                <p><span class="ok">●</span> screen tools online</p>
+                <p><span class="ok">●</span> memory restored</p>
+                <p><span class="accent">you ›</span> open the file I was editing</p>
+                <p class="dim">thinking<span class="blink">_</span></p>
+              </div>
+            </div>
+            <span class="viz-tag">local-first</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap project-layout">
+      <aside class="project-side">
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Solo build</dd></div>
+          <div><dt>Interface</dt><dd>Terminal / TUI</dd></div>
+          <div><dt>Models</dt><dd>Local or cloud, OpenAI-compatible</dd></div>
+          <div><dt>Status</dt><dd>Active, still growing</dd></div>
+          <div><dt>Repository</dt><dd><a href="https://github.com/Modassir2/Infinity" target="_blank" rel="noopener noreferrer">github.com/Modassir2/Infinity</a></dd></div>
+        </dl>
+        <a class="btn btn--primary" href="https://github.com/Modassir2/Infinity" target="_blank" rel="noopener noreferrer">
+          View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </aside>
+
+      <article class="project-article">
+        <section class="article-block">
+          <h2>Why it exists</h2>
+          <p>
+            Jarvis was the first thing I actually wanted to build. Not a chatbot with a nice coat of paint,
+            but something that could look at the screen, open the right file, search the web, and keep track
+            of what happened.
+          </p>
+          <p>
+            Infinity is that idea, rebuilt enough times that it now works. It runs in the terminal because
+            that is where I already am. It can switch tools at runtime because carrying every capability in
+            context is a waste of tokens and attention.
+          </p>
+          <blockquote class="readme-quote">
+            <p>Infinity is a desktop-first AI assistant that runs in the terminal and can switch tool sets dynamically based on the task.</p>
+            <cite>README.md · Infinity</cite>
+          </blockquote>
+        </section>
+
+        <section class="article-block">
+          <h2>What it does</h2>
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fnum">01</span>
+              <h3>Runs local or cloud models</h3>
+              <p>Point <span class="mono">config.json</span> at llama.cpp, Ollama, LM Studio, vLLM, or any hosted OpenAI-compatible endpoint.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">02</span>
+              <h3>Sees the desktop</h3>
+              <p>Captures screenshots for visual context, with multi-monitor support through <span class="mono">primary_monitor</span>.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">03</span>
+              <h3>Changes its tool set</h3>
+              <p>A <span class="mono">get_tools</span> call swaps the active tools at runtime instead of loading everything at once.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">04</span>
+              <h3>Uses the web</h3>
+              <p>Searches through a self-hosted SearXNG instance, with Wikipedia as a fallback when search is not configured.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">05</span>
+              <h3>Reads real files</h3>
+              <p>Plain text, CSV, JSON, PDF, DOCX, and images. The boring formats are usually the ones that matter.</p>
+            </div>
+            <div class="feature-item">
+              <span class="fnum">06</span>
+              <h3>Remembers</h3>
+              <p>Persistent chat history and memory consolidation between sessions, so the assistant is not starting cold every time.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>How it works</h2>
+          <ol class="steps">
+            <li>
+              <div>
+                <strong>Start an endpoint.</strong>
+                <p>Run a local server or use a hosted one. The config holds the base URL, model ID, context length, and the monitor Infinity is allowed to use.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Compose a tool set.</strong>
+                <p>Infinity decides which tools the task needs. <span class="mono">get_tools</span> swaps the set at runtime rather than keeping every tool in the prompt.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Compress the context.</strong>
+                <p>Screenshots, file contents, and search results are trimmed to a configurable character limit before they reach the model.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Keep the thread.</strong>
+                <p>Conversation history and memory live on disk. <span class="mono">/clear</span> clears the conversation; <span class="mono">/update</span> reloads config and memory.</p>
+              </div>
+            </li>
+          </ol>
+
+          <pre class="code-block" data-label="config.json — the short version"><code>{
+  "base_url": "http://127.0.0.1:8002",
+  "context_length": 32768,
+  "buffer_token": 4096,
+  "model_id": "qwen3.5_4b",
+  "primary_monitor": 2,
+  "searxng_url": "http://127.0.0.1:8005"
+}</code></pre>
+        </section>
+
+        <section class="article-block">
+          <h2>What the README says</h2>
+          <p>These are the capabilities listed in the repository, in the README's own words:</p>
+          <ul>
+            <li>Local or cloud OpenAI-compatible model support</li>
+            <li>Desktop screenshot capture and visual context</li>
+            <li>Multi-monitor support via <span class="mono">primary_monitor</span></li>
+            <li>Tool-set switching at runtime with <span class="mono">get_tools</span></li>
+            <li>Web search using a configured SearXNG instance</li>
+            <li>Wikipedia lookup support</li>
+            <li>File and directory management tools</li>
+            <li>Reading support for plain text, CSV, JSON, PDF, DOCX, and images</li>
+            <li>Persistent chat history and memory consolidation</li>
+            <li>Rich terminal UI with markdown formatting</li>
+          </ul>
+          <div class="readme-link-row">
+            <a class="link-arrow" href="https://github.com/Modassir2/Infinity#readme" target="_blank" rel="noopener noreferrer">
+              Read the full README on GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>Stack</h2>
+          <div class="tags">
+            <span class="tag">Python 3</span>
+            <span class="tag">OpenAI SDK</span>
+            <span class="tag">Rich</span>
+            <span class="tag">PyAutoGUI</span>
+            <span class="tag">MSS</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">PyWin32</span>
+            <span class="tag">Pillow</span>
+            <span class="tag">pypdf</span>
+            <span class="tag">python-docx</span>
+            <span class="tag">SearXNG</span>
+            <span class="tag">llama.cpp / Ollama / LM Studio</span>
+          </div>
+          <div class="note-box">
+            <strong>Hardware note:</strong> most of the development has run against local endpoints on
+            modest hardware. The point is not the biggest model. The point is a small model with the right
+            tools and enough context to finish the job.
+          </div>
+        </section>
+
+        <section class="article-block">
+          <h2>What's next</h2>
+          <p>
+            More capabilities, better memory, and less friction between asking and doing. The goal has not
+            changed since the first version: make the computer feel like it is paying attention.
+          </p>
+
+          <nav class="project-pager" aria-label="Project navigation">
+            <a href="image-organizing-system.html">
+              <small>← Previous</small>
+              <strong>Image Organizing System</strong>
+            </a>
+            <a href="desktop-assistant.html">
+              <small>Next →</small>
+              <strong>Desktop Assistant</strong>
+            </a>
+          </nav>
+        </section>
+      </article>
+    </div>
+
+    <section class="cta-band">
+      <div class="wrap cta-inner">
+        <div>
+          <h2>Have a capability it should have?</h2>
+          <p>Ideas, edge cases, and local-model war stories are all welcome.</p>
+        </div>
+        <a class="btn btn--primary" href="../index.html#contact">
+          Get in touch
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Modassir Iqbal</p>
+      <p>Built by hand in HTML, CSS &amp; vanilla JS. No page builder.</p>
+      <p><a href="#main">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
